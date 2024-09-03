@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payments</title>
+    <link rel="stylesheet" href="style9.css">
+</head>
+<body>
+    <div class="model">
+        <form class="form">
+            <div class="payment--options">
+                <img src="paypal.png" alt="">
+                <img src="visa.png" alt="">
+                <img src="money.png" alt="">
+            </div>
+
+            <div class="separator">
+                <hr class="line">
+                <p>Or pay using credit card</p>
+                <hr class="line">
+              </div>
+              <div class="credit-card-info--form">
+                <div class="input_container">
+                  <label for="password_field" class="input_label">Card holder full name</label>
+                  <input id="password_field" class="input_field" type="text" name="input-name" title="Inpit title" placeholder="Enter your name">
+                </div>
+                <div class="input_container">
+                  <label for="password_field" class="input_label">Card Number</label>
+                  <input id="password_field" class="input_field" type="number" name="input-name" title="Inpit title" placeholder="0000 0000 0000 0000">
+                </div>
+                <div class="input_container">
+                  <label for="password_field" class="input_label">Expiry Date / CVV</label>
+                  <div class="split">
+                    <div class="space">
+                      <input id="password_field" class="input_field" type="text" name="input-name" title="Expiry Date" placeholder="dd/mm/yyyy">
+                    </div>
+                  <input id="password_field" class="input_field" type="number" name="cvv" title="CVV" placeholder="CVV">
+                </div>
+                </div>
+              </div>
+                <button onclick="auth()" class="purchase--btn">Send Order</button>
+            </form>
+            </div>
+        </form>
+    </div>
+
+        <!--javascirpt-->
+        <script>
+          function auth(){
+                  alert("Your order has been sent successfully. Thank you for using maystore.com");
+              }
+      </script>
+</body>
+</html>
